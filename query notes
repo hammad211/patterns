@@ -1,0 +1,21 @@
+1. react query also provides caching
+  caching is a layer of data storage which is an subset form of data.
+when an api call occurs some sort of data already store in caches, 
+
+
+
+
+1. useQuery
+      used for the fetching the data after post, delete, get
+       it do not return on success and onerror functions
+
+ 2. useMutation function it returns an object which ususally contain 
+         (i) mutationFn used for api call to fetch modified data like post, delete, put
+         (ii)  it returns onsuccess and onerror functions
+         (iii) if request is successful
+         (iv)  axios.create({ baseURL: "http://localhost:5000" }); //api interceptor
+
+
+
+3.     Query client
+       invalidateQueries:  used for the refetching the data after post, delete get
